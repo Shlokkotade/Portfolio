@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Responsive Portfolio Website</title>
+    <style>
+      /* Chatbot iframe */
+      #chatbot-container {
+        position: fixed;
+        bottom: 80px;
+        right: 20px;
+        width: 400px;
+        height: 600px;
+        border: none;
+        z-index: 1000;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        display: none; /* Hidden by default */
+        border-radius: 12px;
+      }
+  
+      /* Chatbot toggle button */
+      #chatbot-toggle {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1001;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        font-size: 28px;
+        cursor: pointer;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      }
+    </style>
+    
+    <script type="module" crossorigin src="/Portfolio/assets/index-CoJulghy.js"></script>
+    <link rel="stylesheet" crossorigin href="/Portfolio/assets/index-0R4guGBL.css">
+  </head>
+  <body>
+
+    <div id="root"></div>
+
+     <!-- Chatbot Iframe -->
+  <iframe 
+  id="chatbot-container"
+  src="https://bot.writesonic.com/share/bot/fd3cc172-560e-44dc-8068-36c851d3b1e8">
+</iframe>
+
+<!-- Chat Toggle Button -->
+<button id="chatbot-toggle">💬</button>
+
+<!-- JavaScript to Toggle Chat -->
+<script>
+  const toggleButton = document.getElementById('chatbot-toggle');
+  const chatbotContainer = document.getElementById('chatbot-container');
+
+  toggleButton.addEventListener('click', () => {
+    if (chatbotContainer.style.display === 'none') {
+      chatbotContainer.style.display = 'block';
+    } else {
+      chatbotContainer.style.display = 'none';
+    }
+  });
+</script>
+  </body>
+</html>
